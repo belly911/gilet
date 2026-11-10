@@ -24,7 +24,7 @@ input[type=text],input[type=tel]{width:100%;padding:14px;border:1px solid #ccc;b
 .steps{counter-reset:s;padding:0;list-style:none}.steps li{counter-increment:s;padding:8px 0 8px 40px;position:relative}
 .steps li:before{content:counter(s);position:absolute;left:0;top:6px;width:28px;height:28px;border-radius:50%;background:#1d1d1f;color:#fff;text-align:center;line-height:28px;font-weight:700}
 details{background:#fff;border-radius:10px;padding:14px 16px;margin:8px 0;box-shadow:0 1px 6px rgba(0,0,0,.06)}summary{font-weight:600;cursor:pointer}
-footer{font-size:12px;color:#777;text-align:center;padding:30px 0 90px}
+footer{font-size:12px;color:#777;text-align:center;padding:30px 0 90px}footer a{color:#555}
 .sticky{position:fixed;left:0;right:0;bottom:0;background:#fff;padding:10px 14px;box-shadow:0 -2px 12px rgba(0,0,0,.12);z-index:9}
 .note{font-size:13px;color:#666}
 </style></head><body>
@@ -73,7 +73,7 @@ footer{font-size:12px;color:#777;text-align:center;padding:30px 0 90px}
 <input type="hidden" name="source" value="Direct">
 <input type="hidden" name="subid" id="subid"><input type="hidden" name="subid2" id="subid2"><input type="hidden" name="subid3" id="subid3"><input type="hidden" name="cid" id="cid">
 <p><b>1 Gilet Riscaldante a € 79,99</b><br><span class="note">Spedizione rapida · pagamento alla consegna · spese di spedizione non incluse</span></p>
-<div class="chk"><input type="checkbox" required id="p"><label for="p" style="font-weight:400;margin:0">Ho letto e accetto i termini del servizio e l'informativa sulla privacy. I miei dati saranno usati per gestire l'ordine e per essere ricontattato.</label></div>
+<div class="chk"><input type="checkbox" required id="p"><label for="p" style="font-weight:400;margin:0">Ho letto e accetto i <a href="https://offernow.info/terms_cond/WjdlJ8MECRgIkgQVK/default/terms_cond.pdf" target="_blank" rel="noopener">termini e condizioni</a> e l'<a href="https://offernow.info/terms_cond/WjdlJ8MECRgIkgQVK/default/privacy.pdf" target="_blank" rel="noopener">informativa sulla privacy</a>. I miei dati saranno usati per gestire l'ordine e per essere ricontattato.</label></div>
 <button class="btn" type="submit">Ordina ora, paghi alla consegna</button>
 </form></div>
 
@@ -84,7 +84,7 @@ footer{font-size:12px;color:#777;text-align:center;padding:30px 0 90px}
 <details><summary>Quanto costa la spedizione?</summary><p>Le spese di spedizione non sono incluse nel prezzo. Il consulente ti comunica l'importo esatto prima di confermare.</p></details>
 <details><summary>Per chi è adatto?</summary><p>Per chi vuole un po' di calore in più all'aperto. Non è un dispositivo medico e non sostituisce un parere del medico.</p></details>
 </div>
-<footer class="w">Il gilet riscaldante non è un dispositivo medico. Immagini a scopo illustrativo.</footer>
+<footer class="w">Il gilet riscaldante non è un dispositivo medico. Immagini a scopo illustrativo.<br><a href="https://offernow.info/terms_cond/WjdlJ8MECRgIkgQVK/default/terms_cond.pdf" target="_blank" rel="noopener">Termini e condizioni</a> · <a href="https://offernow.info/terms_cond/WjdlJ8MECRgIkgQVK/default/privacy.pdf" target="_blank" rel="noopener">Privacy</a></footer>
 <div class="sticky"><div class="w"><a class="btn" href="#ordina">Ordina ora · € 79,99</a></div></div>
 <script>
 var q=new URLSearchParams(location.search);['subid','subid2','subid3','cid'].forEach(function(k){var e=document.getElementById(k);if(e&&q.get(k))e.value=q.get(k)});
